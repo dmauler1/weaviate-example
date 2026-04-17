@@ -284,4 +284,7 @@ The ingestion script (`ingest_springboot_docs.py`) key functions:
 | `chunk_text()` | Splits text into overlapping word-count based chunks (512 words, 64 overlap) |
 | `upsert_batch()` | Batched upsert to Weaviate in groups of 100 |
 
-> ℹ️ The ingestion script requires `beautifulsoup4` and `lxml`. It does **not** require llama-index, asciidoctor, or any embedding model — all vectorization is handled by Weaviate's `text2vec-transformers` module.
+> ℹ️ The ingestion script requires `beautifulsoup4` and `lxml`. It does **not** require llama-index, asciidoctor, or any embedding model — all vectorization is handled by Weaviate's
+>
+> Please note the code and documentation is a combination of vibe and real code and is offered as is.
+> `text2vec-transformers` module.
